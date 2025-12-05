@@ -1,7 +1,9 @@
 function FinanceAssistantApp() {
   const STORAGE_KEY = "finance_state_v1";
   const SNAPSHOT_KEY = "finance_snapshots_v1";
+  const [description, setDescription] = React.useState("");
 
+  
   const initialState = {
     ahorro: 3092.97,
     personales: 873.12,
